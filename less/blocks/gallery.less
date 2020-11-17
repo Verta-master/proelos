@@ -1,0 +1,53 @@
+.gallery {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  background-color: #f2f8fa;
+  overflow: hidden;
+  
+  &::after {
+    content: '';
+    width: 686px;
+    height: 258px;
+    position: absolute;
+    top: 80px;
+    left: 65%;
+    z-index: 3;
+    background-image: url(../img/icons/56.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.gallery__wrap {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.gallery__slide {
+  box-sizing: border-box;
+  height: auto;
+  opacity: 0.5;
+  .transition();
+  
+  a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+    img {
+      display: block;
+      flex: 0 0 auto;
+    }
+  }
+  
+  &:hover,
+  &:active {
+    opacity: 1;
+    .transition();
+  }
+}

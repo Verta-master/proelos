@@ -1,0 +1,150 @@
+.btn {
+  position: relative;
+  width: 247px;
+  height: 70px;
+//  padding-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+  color: #fff;
+  background-color: #4d9aa4;
+  background-image: linear-gradient(to bottom, #85e9f5, #58bdca);
+  border-bottom: 3px solid #4d9aa4;
+  border-radius: 40px;
+  box-shadow: 0 9px 16px 0 rgba(137,241,254,0.66);
+  overflow: hidden;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    left: -59px;
+    top: 0;
+    bottom: 0;
+    width: 59px;
+    background-image: url(../img/icons/gloss.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: gloss 1.5s ease infinite;
+  }
+  
+  &:hover,
+  &:active {
+    background-image: linear-gradient(to bottom, #87ecf8, #5ed1df);
+  }
+  
+  &--border {
+    color: #54b7c3;
+    background-image: none;
+    background-color: rgba(255,255,255,0);
+    border: 2px solid #4d9aa4;
+    box-shadow: none;
+    .transition();
+    
+    &:hover,
+    &:active {
+      background-image: none;
+      color: #5ed1df;
+      border-color: #5ed1df;
+      .transition();
+    }
+    
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@keyframes gloss {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 150px;
+  height: 40px;
+  padding-left: 25px;
+  font-size: 16px;
+  opacity: 0.5;
+  .transition();
+  
+  &::before {
+    display: block;
+    left: 30px;
+    top: 22px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    transform: translate(-50%,-50%) rotate(-135deg);
+  }
+  
+  &::after {
+    display: none;
+  }
+  
+  &:hover,
+  &:active {
+    opacity: 1;
+    .transition();
+  }
+}
+
+.more {
+  position: relative;
+  z-index: 5;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: -1px;
+  font-size: 24px;
+  line-height: 1;
+  color: #359ba7;
+  font-weight: 700;
+  
+  span {
+    position: relative;
+    padding-left: 30px;
+    text-decoration: underline;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 21px;
+      height: 24px;
+      background-image: url(../img/icons/rotate.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  
+  &:hover,
+  &:active {
+    span {
+      text-decoration: none;
+    }
+  }
+}
