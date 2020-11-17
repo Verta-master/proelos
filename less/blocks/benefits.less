@@ -17,3 +17,77 @@
     background-size: contain;
   }
 }
+
+.benefits__info {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  span {
+    color: @blue;
+    font-weight: 500;
+  }
+}
+
+.benefits__video {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 250px;
+  margin: auto;
+  margin: 60px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.1);
+    .transition();
+  }
+  
+  &:hover,
+  &:active {
+    &::before {
+      opacity: 0;
+      .transition();
+    }
+  }
+}
+
+.benefits__list {
+  .reset();
+  list-style: none;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  position: relative;
+  z-index: 5;
+}
+
+.benefits__item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19px;
+    height: 19px;
+    background-image: url(../img/icons/check.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
