@@ -1,0 +1,146 @@
+.price {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  background-color: #f2f8fa;
+  
+  .title-2 b {
+    font-weight: 300;
+    font-size: 30px;
+    color: #484848;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 512px;
+    height: 484px;
+    background-image: url(../img/icons/flower.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.price__block {
+  position: relative;
+  width: 860px;
+  max-width: 100%;
+  margin-bottom: 30px;
+  margin-top: 100px;
+  padding: 60px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  background-image: linear-gradient(to bottom, #ffffff, #f6f6f6);
+  border-radius: 10px;
+  box-shadow: 0 10px 50px 0 rgba(39,39,39,0.15);
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+    border: 1px dashed #e2e7e7;
+    border-radius: 10px;
+  }
+  
+  &::after {
+    content: "";
+    width: 223px;
+    height: 269px;
+    position: absolute;
+    top: -90px;
+    right: 40px;
+    z-index: 5;
+    background-image: url(../img/icons/note.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .title-2 {
+    padding-left: 20px;
+    
+    &::after {
+      left: 20px;
+    }
+  }
+}
+
+.price__table {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 35px;
+  color: #484848;
+  border-collapse: collapse;
+  
+  th {
+    padding: 5px 20px;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+  }
+  
+  td {
+    padding: 5px 20px;
+    font-size: 20px;
+    letter-spacing: -1px;
+    
+    &:nth-child(2),
+    &:nth-child(3) {
+      text-align: center;
+      font-weight: 700;
+    }
+  }
+  
+  tr:nth-child(2n + 1) {
+    background-color: #f2f8fa;
+  }
+}
+
+.price__wrap {
+  position: relative;
+  padding: 25px 20px;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+}
+
+.price__text {
+  width: ~"calc(100% - 250px)";
+  font-size: 24px;
+  letter-spacing: -0.5px;
+  
+  p {
+    margin: 0;
+  }
+}
+
+.price__btn {
+  width: 240px;
+  height: 60px;
+  padding-left: 20px;
+  margin-top: 15px;
+  
+  &::before {
+    width: 16px;
+    height: 14px;
+    left: 40px;
+    background-image: url(../img/icons/36.png);
+  }
+}
