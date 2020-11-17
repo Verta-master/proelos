@@ -1,7 +1,12 @@
 //Mobile menu
-$('.menu__btn').click(function() {
-  $('.menu').toggleClass('menu--opened');
-  $('.menu__list').slideToggle();
+$('.top__menubtn').click(function() {
+  $('.menu').addClass('menu--opened');
+  $('.overlay').addClass('overlay--opened');
+})
+
+$('.menu__close').click(function() {
+  $('.menu').removeClass('menu--opened');
+  $('.overlay').removeClass('overlay--opened');
 })
 
 //Faq
