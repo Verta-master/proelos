@@ -810,7 +810,7 @@ h3 span,
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 500;
 }
 .top {
   display: -webkit-box;
@@ -2381,4 +2381,101 @@ h3 span,
 }
 .form__checkbox:checked + .form__label::before {
   content: "\2713";
+}
+.menu {
+  display: none;
+  width: 460px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 50px 60px;
+  color: #fff;
+  background-color: #2b858f;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2b858f), to(#0aa1b1));
+  background-image: linear-gradient(to right, #2b858f, #0aa1b1);
+}
+.menu--opened {
+  display: block;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  background-color: rgba(236, 246, 247, 0.7);
+}
+.overlay--opened {
+  display: block;
+}
+.menu__close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/icons/cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 30px;
+}
+.menu__list {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-size: 22px;
+  letter-spacing: -1px;
+}
+.menu__item {
+  margin-bottom: 5px;
+}
+.menu__link:hover,
+.menu__link:active {
+  color: #76e8da;
+  text-decoration: underline;
+}
+.menu__bottom {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #fff;
+}
+.menu__bottom p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.social__item {
+  margin-top: 15px;
+  margin-right: 15px;
+}
+.social__link {
+  width: 46px;
+  height: 46px;
+  display: block;
+  text-align: center;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.social__link:hover,
+.social__link:active {
+  opacity: 0.5;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
