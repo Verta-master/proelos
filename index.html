@@ -184,7 +184,7 @@
               <h3 class="title-3"><span>Запишитесь</span> на эпиляцию прямо сейчас <span>в удобное время</span></h3>
               <p>Выберите удобный день и удобное время для процедуры эпиляции.</p>
             </div>
-            <a href="#" class="btn price__btn">Записаться</a>
+            <a data-fancybox data-src="#call" href="javascript:;" class="btn price__btn">Записаться</a>
           </div>
         </div>
 
@@ -684,10 +684,26 @@
   
   <a href="#top" class="btn btn-top">Наверх</a>
   
-  <!-- Modal window -->
+  <!-- Modal windows -->
   <div style="display: none;" id="carbon" class="modal">
     <p class="title-3 title-center">Стоимость</p>
     <img src="img/images/price.jpg" alt="Стоимость">
+  </div>
+  
+  <div style="display: none;" id="call" class="modal">
+    <p class="title-top">Закажите обратный звонок</p>
+    <p class="title-3"><span>Мы готовы перезвонить</span> на ваш номер сейчас</p>
+    <p class="title-bottom">Администратор салона сразу позвонит на ваш номер, чтобы:</p>
+    <ul class="modal__list">
+      <li>Ответить на ваши вопросы</li>
+      <li>Записать вас на эпиляцию</li>
+    </ul>
+    <form action="#" class="form">
+      <input type="tel" class="form__input" placeholder="8 (999) 999-99-99" required>
+      <button type="submit" class="btn form__btn">Заказать звонок</button>
+      <input type="checkbox" id="checkbox" class="form__checkbox">
+      <label for="checkbox" class="form__label">Я ознакомлен(-а) и согласен (-на) с <a href="#">политикой конфиденциальности</a> сайта</label>
+    </form>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
