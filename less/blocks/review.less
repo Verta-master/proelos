@@ -120,7 +120,7 @@
 
 .review__item {
   position: relative;
-  z-index: 2;
+  z-index: 5;
   display: flex;
   flex-direction: column;
   width: 270px;
@@ -129,7 +129,7 @@
   background-color: #f4f4f4;
   border-radius: 10px;
   
-  &::before {
+  &::after {
     content: '';
     width: 284px;
     height: 246px;
@@ -141,6 +141,10 @@
     background-image: url(../img/images/shadow-3.png);
     background-repeat: no-repeat;
     background-size: contain;
+  }
+  
+  &:nth-child(n + 5) {
+    display: none;
   }
 }
 
@@ -160,7 +164,9 @@
 .review__info {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+//  flex-grow: 1;
+  width: 100%;
+  height: ~"calc(100% - 172px)";
   padding: 30px;
   padding-bottom: 25px;
   text-align: center;

@@ -1,0 +1,43 @@
+.service {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f2f8fa;
+  overflow: hidden;
+  
+  .wrapper {
+    position: relative;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      left: 100%;
+      width: 244px;
+      height: 240px;
+      background-image: url(../../img/icons/61.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.service__btn {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  margin-top: 40px;
+  width: 270px;
+  height: 60px;
+  
+  &::before {
+    width: 16px;
+    height: 14px;
+    background-image: url(../img/icons/36.png);
+  }
+}
+
+.service__dropdown {
+  display: none;
+  margin-top: 40px;
+  text-align: center;
+}

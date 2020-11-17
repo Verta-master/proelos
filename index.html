@@ -271,8 +271,8 @@
     
     <section class="service">
       <div class="wrapper">
-        <h2 class="title-2">Хотите пройти Курс с максимальной выгодой?</h2>
-        <p class="title-bottom">Специально для Вас абонементы на 4, 6 и 10 сеансов с выгодой до 40%!</p>
+        <h2 class="title-2 title-center">Хотите пройти Курс<br><span>с максимальной выгодой?</span></h2>
+        <p class="title-bottom title-center">Специально для Вас абонементы на 4, 6 и 10 сеансов с выгодой до 40%!</p>
         <button type="button" class="btn service__btn">Посмотреть цены</button>
         <div class="service__dropdown">
           <img src="img/images/table.jpg" alt="абонементы">
@@ -749,6 +749,23 @@
   <script>
     $(function() {
       $("#tabs").tabs();
+    });
+  </script>
+  
+  <!-- Btns -->
+  <script>
+    $('.service__btn').click(function() {
+      $('.service__dropdown').slideToggle();
+    });
+    
+    $('.complex__more').click(function() {
+      $(this).hide();
+      $('.complex__item:nth-child(n + 4)').slideToggle();
+    });
+    
+    $('.review__more').click(function() {
+      $(this).hide();
+      $('.review__item:nth-child(n + 5)').slideToggle();
     });
   </script>
 </body>
