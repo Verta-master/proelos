@@ -529,6 +529,20 @@ h2::after,
   height: 8px;
   background-color: #359ba7;
 }
+h3,
+.title-3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  letter-spacing: -1.5px;
+  font-size: 36px;
+  line-height: 38px;
+  color: #484848;
+  font-weight: 700;
+}
+h3 span,
+.title-3 span {
+  color: #359ba7;
+}
 .title-top {
   margin: 0;
   font-size: 24px;
@@ -1691,4 +1705,190 @@ h2::after,
   width: 22px;
   height: 22px;
   background-image: url(../img/icons/percent.png);
+}
+.alarm {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 30px;
+  letter-spacing: -1.5px;
+  font-size: 24px;
+  padding: 40px 50px 30px 190px;
+  color: #858585;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.alarm::after {
+  content: '';
+  height: 5px;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: -5px;
+  z-index: -1;
+  background: #e8e8e8;
+  border-radius: 10px;
+}
+.alarm::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 60px;
+  width: 100px;
+  height: 89px;
+  background-image: url(../img/icons/34.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.alarm p {
+  margin: 0;
+}
+.alarm .alarm__title {
+  margin-bottom: 10px;
+}
+.alarm span {
+  color: #5bbfcb;
+  font-weight: 500;
+}
+.alarm__title {
+  font: 30px;
+  font-weight: 700;
+  color: #484848;
+}
+.price {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  background-color: #f2f8fa;
+}
+.price .title-2 b {
+  font-weight: 300;
+  font-size: 30px;
+  color: #484848;
+}
+.price::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 150px;
+  width: 512px;
+  height: 484px;
+  background-image: url(../img/icons/flower.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.price__block {
+  position: relative;
+  width: 860px;
+  max-width: 100%;
+  margin-bottom: 30px;
+  margin-top: 100px;
+  padding: 60px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f6f6f6));
+  background-image: linear-gradient(to bottom, #ffffff, #f6f6f6);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 50px 0 rgba(39, 39, 39, 0.15);
+          box-shadow: 0 10px 50px 0 rgba(39, 39, 39, 0.15);
+}
+.price__block::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+  border: 1px dashed #e2e7e7;
+  border-radius: 10px;
+}
+.price__block::after {
+  content: "";
+  width: 223px;
+  height: 269px;
+  position: absolute;
+  top: -90px;
+  right: 40px;
+  z-index: 5;
+  background-image: url(../img/icons/note.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.price__block .title-2 {
+  padding-left: 20px;
+}
+.price__block .title-2::after {
+  left: 20px;
+}
+.price__table {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 35px;
+  color: #484848;
+  border-collapse: collapse;
+}
+.price__table th {
+  padding: 5px 20px;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+}
+.price__table td {
+  padding: 5px 20px;
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+.price__table td:nth-child(2),
+.price__table td:nth-child(3) {
+  text-align: center;
+  font-weight: 700;
+}
+.price__table tr:nth-child(2n + 1) {
+  background-color: #f2f8fa;
+}
+.price__wrap {
+  position: relative;
+  padding: 25px 20px;
+  padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.price__wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+.price__text {
+  width: calc(100% - 250px);
+  font-size: 24px;
+  letter-spacing: -0.5px;
+}
+.price__text p {
+  margin: 0;
+}
+.price__btn {
+  width: 240px;
+  height: 60px;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+.price__btn::before {
+  width: 16px;
+  height: 14px;
+  left: 40px;
+  background-image: url(../img/icons/36.png);
 }
