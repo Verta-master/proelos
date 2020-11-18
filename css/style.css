@@ -2211,6 +2211,7 @@ h3 span,
   margin-top: 30px;
 }
 .modal__list {
+  margin-left: 60px;
   font-size: 20px;
 }
 .carbon {
@@ -2322,6 +2323,8 @@ h3 span,
 .form {
   width: 300px;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .form__input {
   display: block;
