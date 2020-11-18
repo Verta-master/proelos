@@ -5,6 +5,7 @@
   <meta name="robots" content="noindex">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Pro Elos</title>
+  <link rel="shortcut icon" href="img/icons/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -103,12 +104,14 @@
           <a href="#" class="btn sale__btn">Хочу Скидку</a>
         </div>
       </div>
+      <img src="img/icons/pero.png" alt="Pro Elos" class="sale__parallax1 paroller">
+      <img src="img/icons/pero3.png" alt="Pro Elos" class="sale__parallax2 paroller">
     </section>
     
     <section class="benefits" id="benefits">
       <div class="wrapper">
         <p class="title-top title-center">Удобный сервис для вас</p>
-        <h2 class="title-2 title-center">Преимущества ELOS-эпиляции перед другими аппаратными методами удаления волос</h2>
+        <h2 class="title-2 title-center"><span>Преимущества ELOS-эпиляции</span> перед другими аппаратными методами удаления волос</h2>
         <div class="benefits__info">
           <p>ELOS это аббревиатура от <span>"Electro-Optical Synergy",</span> что дословно переводится как <span>«Электро-Оптическая Синергия».</span></p>
           <p>ELOS-эпиляция сочетает в себе эффект всех существующих технологий: фото-, электро- и лазерной эпиляций, благодаря соединению оптической энергии света и энергии биполярного тока.  Аппарат способен точечно воздействовать на проблемную зону, уничтожая непосредственно волосяной фолликул при этом оказывая благотворное влияние на кожу, обеспечивая омолаживающий эффект. Осуществляя ELOS эпиляцию, можно улучшить структуру кожи, т.к. биполярный ток стимулирует усиленную выработку коллагена и эластина, обеспечивая коже <span>эластичность, гладкость и упругость.</span></p>
@@ -127,6 +130,7 @@
           <li class="benefits__item">быстрота проведения процедуры (подмышки 7 минут, голени/глубокое бикини 15-20 минут, ножки полностью за полчаса)</li>
         </ul>
       </div>
+      <img src="img/images/89.png" alt="Pro Elos" class="benefits__parallax paroller">
     </section>
     
     <section class="price" id="service">
@@ -240,7 +244,7 @@
             <a data-fancybox data-src="#call" href="javascript:;" class="btn price__btn">Записаться</a>
           </div>
         </div>
-
+        <img src="img/images/blick.png" alt="Pro Elos" class="price__parallax paroller">
         <div class="alarm">
           <p class="alarm__title">Важно!</p>
           <p>Оптимальная длина волос в день процедуры <span>2-5мм.</span>, т.к. волос являются проводником энергии в <span>технологии ELOS.</span></p>
@@ -304,6 +308,7 @@
         </ul>
         <button type="button" class="more complex__more"><span>Показать еще предложения</span></button>
       </div>
+      <img src="img/images/leavesbg.png" alt="Pro Elos" class="complex__parallax paroller">
     </section>
     
     <section class="service" id="abonement">
@@ -764,6 +769,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/script.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+  <script src="js/jquery.paroller.min.js"></script>
   
   <!-- Sliders -->
   <script>
@@ -819,6 +826,17 @@
     $('.review__more').click(function() {
       $(this).hide();
       $('.review__item:nth-child(n + 5)').slideToggle();
+    });
+  </script>
+  
+  <!-- Animation -->
+  <script>
+    new WOW().init();
+    
+    $(".paroller, [data-paroller-factor]").paroller({
+      factor: 0.3,
+      type: 'foreground',
+      direction: 'vertical'
     });
   </script>
 </body>

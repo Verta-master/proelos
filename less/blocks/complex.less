@@ -1,5 +1,6 @@
 .complex {
   position: relative;
+  z-index: 1;
   background-color: #f2f8fa;
   
   .wrapper {
@@ -21,6 +22,16 @@
       background-size: contain;
     }
   }
+}
+
+.complex__parallax {
+  position: absolute;
+  z-index: 1;
+  width: 1553px;
+  height: 605px;
+  top: 0;
+  left: 50%;
+  margin-left: -800px;
 }
 
 .complex__list {
