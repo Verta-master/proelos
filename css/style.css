@@ -2257,6 +2257,9 @@ h3 span,
   margin-right: auto;
   margin-top: 30px;
 }
+.modal--carbon {
+  width: 1000px;
+}
 .modal__list {
   margin-left: 60px;
   font-size: 20px;
