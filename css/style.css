@@ -972,6 +972,7 @@ h3 span,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 .sale::after {
   content: "";
@@ -1005,6 +1006,22 @@ h3 span,
 }
 .sale__btn {
   margin-top: 50px;
+}
+.sale__parallax1 {
+  width: 276px;
+  height: 132px;
+  position: absolute;
+  top: 500px;
+  left: 70%;
+  z-index: 4;
+}
+.sale__parallax2 {
+  width: 154px;
+  height: 74px;
+  position: absolute;
+  top: 100px;
+  right: 80%;
+  z-index: 4;
 }
 .footer {
   padding-top: 30px;
@@ -1639,6 +1656,7 @@ h3 span,
 }
 .complex {
   position: relative;
+  z-index: 1;
   background-color: #f2f8fa;
 }
 .complex .wrapper {
@@ -1658,6 +1676,15 @@ h3 span,
   background-image: url(../img/images/girl.png);
   background-repeat: no-repeat;
   background-size: contain;
+}
+.complex__parallax {
+  position: absolute;
+  z-index: 1;
+  width: 1553px;
+  height: 605px;
+  top: 0;
+  left: 50%;
+  margin-left: -800px;
 }
 .complex__list {
   margin: 0;
@@ -1839,9 +1866,11 @@ h3 span,
 }
 .price {
   position: relative;
+  z-index: 1;
   padding-top: 160px;
   padding-bottom: 40px;
   background-color: #f2f8fa;
+  overflow: hidden;
 }
 .price .title-2 b {
   font-weight: 300;
@@ -1861,7 +1890,7 @@ h3 span,
 }
 .price__block {
   position: relative;
-  z-index: 1;
+  z-index: 5;
   width: 860px;
   max-width: 100%;
   margin-bottom: 50px;
@@ -1977,6 +2006,15 @@ h3 span,
   left: 40px;
   background-image: url(../img/icons/36.png);
 }
+.price__parallax {
+  position: absolute;
+  z-index: 2;
+  width: 1427px;
+  height: 936px;
+  top: -100px;
+  left: 50%;
+  margin-left: -810px;
+}
 .benefits {
   position: relative;
   z-index: 2;
@@ -1994,6 +2032,15 @@ h3 span,
   background-image: url(../img/images/clouds.png);
   background-repeat: no-repeat;
   background-size: contain;
+}
+.benefits__parallax {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 50%;
+  margin-left: -800px;
+  width: 1529px;
+  height: 926px;
 }
 .benefits__info {
   max-width: 900px;
@@ -2229,7 +2276,7 @@ h3 span,
   position: absolute;
   z-index: -1;
   top: 30px;
-  right: 100%;
+  right: 90%;
   width: 374px;
   height: 213px;
   background-image: url(../img/icons/52.png);
@@ -2295,10 +2342,10 @@ h3 span,
   content: "";
   position: absolute;
   top: -50px;
-  left: 100%;
+  left: 90%;
   width: 244px;
   height: 240px;
-  background-image: url(../../img/icons/61.png);
+  background-image: url(../img/icons/61.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
