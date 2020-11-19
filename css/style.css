@@ -996,11 +996,11 @@ h3 span,
 .sale__text::before {
   content: "";
   position: absolute;
-  top: -20px;
+  top: 70px;
   left: 0;
   width: 400px;
-  height: 600px;
-  background-image: url(../img/images/17.png);
+  height: 500px;
+  background-image: url(../img/images/box.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1473,18 +1473,6 @@ h3 span,
   left: -120px;
   z-index: -1;
   background-image: url(../img/icons/70.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.review__list::after {
-  content: '';
-  width: 329px;
-  height: 357px;
-  position: absolute;
-  top: 110px;
-  right: -190px;
-  z-index: -1;
-  background-image: url(../img/icons/71.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
