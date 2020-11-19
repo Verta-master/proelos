@@ -9,9 +9,14 @@ $('.menu__close').click(function() {
   $('.overlay').removeClass('overlay--opened');
 })
 
+$('.overlay').click(function() {
+  $('.menu').removeClass('menu--opened');
+  $('.overlay').removeClass('overlay--opened');
+})
+
 //Faq
+$('.faq__item:first-child .faq__answer').slideDown();
 $('.faq__title').click(function() {
-  $('.faq__answer').slideUp();
   $(this).next().slideToggle();
 })
 
