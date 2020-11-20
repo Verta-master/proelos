@@ -20,6 +20,30 @@ $('.faq__title').click(function() {
   $(this).next().slideToggle();
 })
 
+//Btns
+$('.service__btn').click(function() {
+  $('.service__dropdown').slideToggle();
+});
+
+$('.complex__more').click(function() {
+  $(this).hide();
+  $('.complex__item:nth-child(n + 4)').slideToggle();
+});
+
+if (window.innerWidth > 1140) {
+  $('.review__more').click(function() {
+    $(this).hide();
+    $('.review__item:nth-child(n + 5)').slideToggle();
+  });
+}
+
+if (window.innerWidth < 1140) {
+  $('.review__more').click(function() {
+    $(this).hide();
+    $('.review__item:nth-child(n + 4)').slideToggle();
+  });
+}
+
 //Scroll to top
 $(window).scroll(function(){
   if ((window.pageYOffset || document.documentElement.scrollTop ||document.body.scrollTop) >= 100) {
