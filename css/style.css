@@ -971,7 +971,7 @@ h3 span,
 .promo__btn::before {
   width: 26px;
   height: 25px;
-  background-image: url(../../img/icons/pen.png);
+  background-image: url(../img/icons/pen.png);
 }
 .sale {
   position: relative;
