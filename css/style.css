@@ -2711,6 +2711,9 @@ h3 span,
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .tabs__wrap::before {
+    display: none;
+  }
 }
 @media (max-width: 480px) {
   .logo {
