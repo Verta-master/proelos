@@ -25,9 +25,9 @@ $('.service__btn').click(function() {
   $('.service__dropdown').slideToggle();
 });
 
-$('.complex__more').click(function() {
-  $(this).hide();
-  $('.complex__item:nth-child(n + 4)').slideToggle();
+$('.tabs__btn').click(function() {
+  event.preventDefault();
+  $('.carbon__img').slideToggle();
 });
 
 if (window.innerWidth > 1140) {
