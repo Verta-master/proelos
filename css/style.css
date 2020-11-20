@@ -975,7 +975,7 @@ h3 span,
 }
 .sale {
   position: relative;
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 100px;
   background-image: url(../img/images/bg2.jpg);
   background-repeat: no-repeat;
@@ -1107,7 +1107,7 @@ h3 span,
 .faq {
   position: relative;
   z-index: 2;
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 20px;
   overflow: hidden;
 }
@@ -1394,7 +1394,7 @@ h3 span,
   position: relative;
   z-index: 2;
   padding-top: 100px;
-  padding-bottom: 170px;
+  padding-bottom: 100px;
   background-image: url(../img/images/bg3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1605,7 +1605,7 @@ h3 span,
 }
 .gallery {
   position: relative;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 70px;
   background-color: #f2f8fa;
   overflow: hidden;
@@ -1933,39 +1933,12 @@ h3 span,
 .price__block .title-2::after {
   left: 20px;
 }
-.price__table {
-  position: relative;
-  z-index: 5;
-  width: 100%;
-  margin-top: 60px;
-  margin-bottom: 35px;
-  color: #484848;
-  border-collapse: collapse;
-}
-.price__table th {
-  padding: 5px 20px;
-  font-size: 22px;
-  font-weight: 700;
-  text-align: left;
-}
-.price__table td {
-  padding: 5px 20px;
-  font-size: 20px;
-  letter-spacing: -1px;
-}
-.price__table td:nth-child(2),
-.price__table td:nth-child(3) {
-  text-align: center;
-  font-weight: 700;
-}
-.price__table tr:nth-child(2n + 1) {
-  background-color: #f2f8fa;
-}
 .price__wrap {
   position: relative;
   z-index: 5;
   padding: 25px 20px;
   padding-bottom: 0;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1975,15 +1948,7 @@ h3 span,
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-.price__wrap::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 20px;
-  right: 20px;
-  height: 1px;
-  background-color: #dbdbdb;
+  border-top: 1px solid #dbdbdb;
 }
 .price__text {
   width: calc(100% - 250px);
@@ -2017,7 +1982,7 @@ h3 span,
 .benefits {
   position: relative;
   z-index: 2;
-  padding-top: 120px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 .benefits::after {
@@ -2709,14 +2674,6 @@ h3 span,
     top: -60px;
     right: 10px;
   }
-  .price__table-wrap {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: scroll;
-  }
-  .price__table {
-    width: 600px;
-  }
   .price__wrap {
     display: block;
   }
@@ -2845,15 +2802,17 @@ h3 span,
     padding-top: 80px;
     padding-bottom: 0;
   }
-  .price__table {
-    margin-top: 0;
-  }
   .price__text {
     font-size: 20px;
   }
   .price__wrap {
     padding: 0px;
     padding-top: 20px;
+    text-align: center;
+  }
+  .price__btn {
+    margin-left: auto;
+    margin-right: auto;
   }
   .alarm {
     padding: 20px;
